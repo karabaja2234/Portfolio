@@ -188,15 +188,16 @@ html {
     }
     
     .heading1 {
-        font-size: 36px;
+        font-size: 56px;
         text-align: center;
         color: white;
         padding-top: 20px;
         height: 100%;
+        text-shadow: 5px 5px 1px #052939
     }
 
     .subtitle1 {
-        font-size: 18px;
+        font-size: 22px;
         text-align: center;
         color: white;
         opacity: 0.5;
@@ -285,8 +286,8 @@ html {
         font-family: 'Montserrat';
         font-size: 18px;
         text-align: left;
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 5%;
+        padding-left: 5%;
     }
 
     /*Skills part*/
@@ -641,18 +642,18 @@ html {
         justify-content: center;  
     }
 
-    .project1_info,  .project2_info,  .project3_info {
+    .project1_info,  .project2_info,  .project3_info, .project4_info {
         width: 90%;
     }
 
-    .project1_title, .project2_title, .project3_title {
+    .project1_title, .project2_title, .project3_title, .project4_title {
         display: flex;
         align-items: center;
         justify-content: center;
         padding-left: 20px;
     }
 
-    .project_title1, .project_title2, .project_title3 {
+    .project_title1, .project_title2, .project_title3, .project_title4 {
         font-size: 17px;
         line-height: 25px;
         font-weight: 600;
@@ -743,18 +744,18 @@ html {
         justify-content: center;  
     }
 
-    .project1_info,  .project2_info,  .project3_info {
+    .project1_info,  .project2_info,  .project3_info, .project4_info {
         width: 90%;
     }
 
-    .project1_title, .project2_title, .project3_title {
+    .project1_title, .project2_title, .project3_title, .project4_title {
         display: flex;
         align-items: center;
         justify-content: center;
         padding-left: 20px;
     }
 
-    .project_title1, .project_title2, .project_title3 {
+    .project_title1, .project_title2, .project_title3, .project_title4 {
         font-size: 17px;
         font-weight: 600;
         color: white;
@@ -820,7 +821,7 @@ html {
     }
 
     .heading1 {
-        font-size: 46px;
+        font-size: 66px;
         text-align: center;
         color: white;
         font-weight: 700;
@@ -906,18 +907,18 @@ html {
         justify-content: center;  
     }
 
-    .project1_info,  .project2_info,  .project3_info {
+    .project1_info,  .project2_info,  .project3_info, .project4_info {
         width: 90%;
     }
 
-    .project1_title, .project2_title, .project3_title {
+    .project1_title, .project2_title, .project3_title, .project4_title {
         display: flex;
         align-items: center;
         justify-content: center;
         padding-left: 20px;
     }
 
-    .project_title1, .project_title2, .project_title3 {
+    .project_title1, .project_title2, .project_title3, .project_title4 {
         font-size: 17px;
         font-weight: 600;
         color: white;
@@ -1015,7 +1016,7 @@ html {
     }
 
     .heading1 {
-        font-size: 66px;
+        font-size: 96px;
         text-align: center;
         color: white;
         font-weight: 700;
@@ -1115,18 +1116,18 @@ html {
         justify-content: flex-start;  
     }
 
-    .project1_info,  .project2_info,  .project3_info {
+    .project1_info,  .project2_info,  .project3_info, .project4_info {
         width: 90%;
     }
 
-    .project1_title, .project2_title, .project3_title {
+    .project1_title, .project2_title, .project3_title, .project4_title {
         display: flex;
         align-items: center;
         justify-content: flex-start;
         padding-left: 20px;
     }
 
-    .project_title1, .project_title2, .project_title3 {
+    .project_title1, .project_title2, .project_title3, .project_title4 {
         font-size: 17px;
         font-weight: 600;
         color: white;
