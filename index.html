@@ -26,39 +26,47 @@
 
 <body>
     <div id="main">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light w-100" style="background-color: rgba(0, 0,0, 0.8);">
+            <div class="container">
+                <a class="navbar-brand text-light" href="#"><i class="fas fa-code"></i></a>
+                <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    style="background: none !important; border: none !important; outline: none !important; color: white !important">
+                    <span> <i class="fas fa-bars" style="color:#fff; font-size: 24px;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#biography">Biography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#projects">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <!--Front part-->
         <div id="front">
-            <div class="front_heading">
+            <div class="front_heading" style="background-color: rgba(0, 0,0, 0.8); border-radius: 15px;">
                 <h1 class="heading1" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
                     Selman Patković</h1>
                 <h3 class="subtitle1">Full Stack Web Developer</h3>
             </div>
-            <div class="front_button">
-                <a href="#biography"><button class="btn btn-primary"><i class="fas fa-info-circle"></i>Meet
-                        me</button></a>
+            <div class="front_button mt-4">
+                <a href="#biography"><button class="btn text-dark border-light"
+                        style="background-color: rgba(252, 148, 49, 1);"><i
+                            class="fas fa-info-circle mr-2"></i><strong>Meet
+                            me</strong></button></a>
             </div>
         </div>
 
@@ -246,15 +254,14 @@
                     </div>
                 </div>
                 <div class="row">
-
-                    <div class="project1_info">
-                        <div class="project1_title">
-                            <h5 class="project_title1">DevelopURSELF
-                                Community
-                                WebPage</h5>
-                        </div>
-                        <div class="project1_text">
-                            <p class="project_text">An idea of an organised
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column align-items-center">
+                            <h5 class="h5 text-light text-center">
+                                <strong>DevelopURSELF
+                                    Community
+                                    WebPage</strong></h5>
+                            <p class="text-light text-center mt-3" style="font-size: 14px">An idea
+                                of an organised
                                 developers community in
                                 Zenica, based on
                                 organising courses for attendants of different ages, gaming tournaments and many
@@ -264,22 +271,12 @@
                                 the
                                 site), Tournaments section (info about the tournaments which may be organised),
                                 a Signup section (consists of a register form for any user).</p>
-                            <ol class="project_text_mobile">
-                                <li>Idea of an organised developers community</li>
-                                <li>Webpage that consists of 3 different sections</li>
-                                <li>Main section - all the neccessary info about the page</li>
-                                <li>Tournaments section - idea of organised tournaments for community members
-                                </li>
-                                <li>Signup section - consists of a register form for users</li>
-                            </ol>
                         </div>
                     </div>
-                    <div class="project2_info">
-                        <div class="project2_title">
-                            <h5 class="project_title2">ScrollerJS JavaScript Game</h5>
-                        </div>
-                        <div class="project2_text">
-                            <p class="project_text">ScrollerJS is a web
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column align-items-center">
+                            <h5 class="h5 text-light text-center"><strong>ScrollerJS JavaScript Game</strong></h5>
+                            <p class="text-light text-center mt-3" style="font-size: 14px">ScrollerJS is a web
                                 browser
                                 game, made in
                                 JavaScript, as well as in
@@ -289,59 +286,35 @@
                                 scoreboard,
                                 which changes the level (difficulty) of the game based on the achieved score.
                             </p>
-                            <ol class="project_text_mobile">
-                                <li>Web browser game mainly made in JavaScript and related technologies</li>
-                                <li>Game is based on collecting the falling icons by moving the cart with your
-                                    mouse
-                                </li>
-                                <li>ScrollerJS has an active scoreboard, as well as different difficulties
-                                    (levels)
-                                </li>
-                            </ol>
                         </div>
                     </div>
-                    <div class="project3_info">
-                        <div class="project3_title">
-                            <h5 class="project_title3">JavaScript WeatherApp
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column align-items-center">
+                            <h5 class="h5 text-light text-center"><strong>JavaScript WeatherApp</strong>
                             </h5>
-                        </div>
-                        <div class="project3_text">
-                            <p class="project_text">This particular app
+                            <p class="text-light text-center mt-3" style="font-size: 14px">This particular app
                                 provides a 5-day or single day
                                 weather data for any
                                 city in the world, using OpenWeather API. It retrieves the weather data based on
                                 the
                                 city
                                 that is typed in the search bar.</p>
-                            <ol class="project_text_mobile">
-                                <li>Weather app made using JavaScript and related technologies</li>
-                                <li>The app provides weather data for any city
-                                </li>
-                                <li>This app provides weather data for a single day or the next 5 days</li>
-                                <li>It uses OpenWeather API to retrieve the weather data from the server</li>
-                            </ol>
                         </div>
                     </div>
-                    <div class="project4_info">
-                        <div class="project4_title">
-                            <h5 class="project_title4">COVID-19 Hackathon WebPage</h5>
-                        </div>
-                        <div class="project4_text">
-                            <p class="project_text">Info page about COVID-19, particularly made for a Hackathon
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column align-items-center">
+                            <h5 class="h5 text-light text-center"><strong>COVID-19 Hackathon WebPage</strong></h5>
+                            <p class="text-light text-center mt-3" style="font-size: 14px">Info page about COVID-19,
+                                particularly made for a
+                                Hackathon
                                 event
                                 which was held during the quarantine 2020.
                                 The goal of making this webpage was to show the main features of the COVID-19
                                 app,
                                 which
                                 is still in production.</p>
-                            <ol class="project_text_mobile">
-                                <li>Info page about COVID-19</li>
-                                <li>Page that features some parts of the COVID-19 app</li>
-                                <li>The main app is still in production</li>
-                            </ol>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -353,8 +326,8 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5720.448579308476!2d17.92056797717595!3d44.2024467664251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ee23ae979250f%3A0x6fbcab0f8f80f2f2!2sBabina%20rijeka%2C%20Zenica%2072000!5e0!3m2!1sen!2sba!4v1582035933430!5m2!1sen!2sba"
                 width="1920" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
         <div class="info">
-            <h3 class="subtitle5">Find me on</h3>
-            <div class="social_media">
+            <h3 class="subtitle5 mt-4">Find me on</h3>
+            <div class="social_media mt-4">
                 <a href="https://www.facebook.com/selman.patkovic.9">
                     <div class="facebook" data-aos="fade-up" data-aos-duration="700"><i class="fab fa-facebook"></i>
                     </div>
@@ -372,16 +345,16 @@
                     </div>
                 </a>
             </div>
-            <h3 class="subtitle5">Contact info</h3>
+            <h3 class="subtitle5 mt-4">Contact info</h3>
             <div class="mail">
                 <div class="mail_logo"><i class="fas fa-envelope-square"></i></div>
                 <div class="mail_info">
-                    <h5 class="subtitle6">selmanpatak@gmail.com</h5>
+                    <h5 class="subtitle6 mt-4">selmanpatak@gmail.com</h5>
                 </div>
             </div>
 
             <div class="copyright_text">
-                <h5 class="subtitle7"> Copyright &copy; Selman Patković 2020</h5>
+                <h5 class="subtitle7 mt-2"> Copyright &copy; Selman Patković 2020</h5>
             </div>
 
         </div>
