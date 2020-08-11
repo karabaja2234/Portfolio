@@ -8,41 +8,47 @@
     <title>Selman Patković</title>
     <link rel="stylesheet" href="style1.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="styles.css.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/26b51dd78e.js" crossorigin="anonymous"></script>
-    <link href="http://allfont.net/allfont.css?fonts=league-spartan" rel="stylesheet" type="text/css" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="main">
-
-        <!--Navbar-->
-        <div class="wrapper">
-            <nav>
-                <!--Hamburger icon-->
-                <div class="menu-icon">
-                    <i class="fa fa-bars fa-2x"></i>
-                </div>
-                <!--Menu-->
-                <div class="menu">
-                    <ul>
-                        <li><a class="border_li" href="#front">Home</a></li>
-                        <li><a class="border_li" href="#biography">Biography</a></li>
-                        <li><a class="border_li" href="#skills">Skills</a></li>
-                        <li><a class="border_li" href="#projects">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <!--Front part-->
         <div id="front">
             <div class="front_heading">
@@ -51,7 +57,7 @@
                 <h3 class="subtitle1">Full Stack Web Developer</h3>
             </div>
             <div class="front_button">
-                <a href="#biography"><button class="btn btn-1 btn-sep"><i class="fas fa-info-circle"></i>Meet
+                <a href="#biography"><button class="btn btn-primary"><i class="fas fa-info-circle"></i>Meet
                         me</button></a>
             </div>
         </div>
@@ -202,34 +208,45 @@
 
         <!--Projects part-->
         <div id="projects">
-            <h3 class="subtitle4">Projects</h3>
-            <div class="projects_content">
-                <div class="carousel_wrapper">
-                    <div class="carousel">
-                        <a id="project1" class="carousel-item"
-                            href="https://github.com/karabaja2234/Project-HTML-and-CSS-Selman-Patkovic">
-                            <img class="carousel-image" src="project1.png">
-                            <h2>DevelopURSELF Community Webpage</h2>
+            <div class="container d-flex flex-column align-items-center">
+                <h3 class="row subtitle4">Projects</h3>
+                <div class="row">
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-width carousel-height"
+                        data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                            </li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner carousel-width carousel-height ">
+                            <div class="carousel-item active">
+                                <img class="d-block carousel-width box-shadow" style="border-radius: 30px;"
+                                    src="project1.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block carousel-width box-shadow" style="border-radius: 30px;"
+                                    src="project2.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block carousel-width box-shadow" style="border-radius: 30px;"
+                                    src="project3.png" alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev bg-dark" style="width: 30px; height: 100px; margin-top: 20%; "
+                            href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
                         </a>
-
-                        <a id="project2" class="carousel-item"
-                            href="https://github.com/karabaja2234/Project-JS-Patkovic-Selman-Final"><img
-                                class="carousel-image" src="project2.png">
-                            <h2>ScrollerJS JavaScript Game</h2>
-                        </a>
-                        <a id="project3" class="carousel-item"
-                            href="https://github.com/karabaja2234/Project-WeatherApp-Patkovic-Selman"><img
-                                class="carousel-image" src="project3.png">
-                            <h2>JavaScript Weather App</h2>
-                        </a>
-                        <a id="project4" class="carousel-item"
-                            href="https://github.com/karabaja2234/COVID19-Hackathon-2020-WebPage"><img
-                                class="carousel-image" src="project4.png">
-                            <h2>COVID-19 Hackathon WebPage</h2>
+                        <a class="carousel-control-next bg-dark" style="width: 30px; height: 100px; margin-top: 20%"
+                            href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only ">Next</span>
                         </a>
                     </div>
                 </div>
-                <div class="carousel_info">
+                <div class="row">
+
                     <div class="project1_info">
                         <div class="project1_title">
                             <h5 class="project_title1">DevelopURSELF
@@ -240,16 +257,19 @@
                             <p class="project_text">An idea of an organised
                                 developers community in
                                 Zenica, based on
-                                organising courses for attendants of different ages, gaming tournaments and many other
+                                organising courses for attendants of different ages, gaming tournaments and many
+                                other
                                 fun
-                                activities. This page consists of 3 different sections: Main section (info about the
+                                activities. This page consists of 3 different sections: Main section (info about
+                                the
                                 site), Tournaments section (info about the tournaments which may be organised),
                                 a Signup section (consists of a register form for any user).</p>
                             <ol class="project_text_mobile">
                                 <li>Idea of an organised developers community</li>
                                 <li>Webpage that consists of 3 different sections</li>
                                 <li>Main section - all the neccessary info about the page</li>
-                                <li>Tournaments section - idea of organised tournaments for community members</li>
+                                <li>Tournaments section - idea of organised tournaments for community members
+                                </li>
                                 <li>Signup section - consists of a register form for users</li>
                             </ol>
                         </div>
@@ -267,12 +287,16 @@
                                 collecting
                                 icons by moving the cart with your mouse. At the top of the screen there is a
                                 scoreboard,
-                                which changes the level (difficulty) of the game based on the achieved score.</p>
+                                which changes the level (difficulty) of the game based on the achieved score.
+                            </p>
                             <ol class="project_text_mobile">
                                 <li>Web browser game mainly made in JavaScript and related technologies</li>
-                                <li>Game is based on collecting the falling icons by moving the cart with your mouse
+                                <li>Game is based on collecting the falling icons by moving the cart with your
+                                    mouse
                                 </li>
-                                <li>ScrollerJS has an active scoreboard, as well as different difficulties (levels)</li>
+                                <li>ScrollerJS has an active scoreboard, as well as different difficulties
+                                    (levels)
+                                </li>
                             </ol>
                         </div>
                     </div>
@@ -285,7 +309,8 @@
                             <p class="project_text">This particular app
                                 provides a 5-day or single day
                                 weather data for any
-                                city in the world, using OpenWeather API. It retrieves the weather data based on the
+                                city in the world, using OpenWeather API. It retrieves the weather data based on
+                                the
                                 city
                                 that is typed in the search bar.</p>
                             <ol class="project_text_mobile">
@@ -302,9 +327,12 @@
                             <h5 class="project_title4">COVID-19 Hackathon WebPage</h5>
                         </div>
                         <div class="project4_text">
-                            <p class="project_text">Info page about COVID-19, particularly made for a Hackathon event
+                            <p class="project_text">Info page about COVID-19, particularly made for a Hackathon
+                                event
                                 which was held during the quarantine 2020.
-                                The goal of making this webpage was to show the main features of the COVID-19 app, which
+                                The goal of making this webpage was to show the main features of the COVID-19
+                                app,
+                                which
                                 is still in production.</p>
                             <ol class="project_text_mobile">
                                 <li>Info page about COVID-19</li>
@@ -313,79 +341,59 @@
                             </ol>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!--Contact info part-->
-        <div id="contact">
-            <div class="map"><iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5720.448579308476!2d17.92056797717595!3d44.2024467664251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ee23ae979250f%3A0x6fbcab0f8f80f2f2!2sBabina%20rijeka%2C%20Zenica%2072000!5e0!3m2!1sen!2sba!4v1582035933430!5m2!1sen!2sba"
-                    width="1920" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
-            <div class="info">
-                <h3 class="subtitle5">Find me on</h3>
-                <div class="social_media">
-                    <a href="https://www.facebook.com/selman.patkovic.9">
-                        <div class="facebook" data-aos="fade-up" data-aos-duration="700"><i class="fab fa-facebook"></i>
-                        </div>
-                    </a>
-                    <a href="https://www.instagram.com/karabaja2234/">
-                        <div class="instagram" data-aos="fade-up" data-aos-duration="700"><i
-                                class="fab fa-instagram"></i>
-                        </div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/selman-patkovic-8322b3197/">
-                        <div class="linkedin" data-aos="fade-up" data-aos-duration="700"><i class="fab fa-linkedin"></i>
-                        </div>
-                    </a>
-                    <a href="https://github.com/karabaja2234">
-                        <div class="github" data-aos="fade-up" data-aos-duration="700"><i
-                                class="fab fa-github-square"></i>
-                        </div>
-                    </a>
                 </div>
-                <h3 class="subtitle5">Contact info</h3>
-                <div class="mail">
-                    <div class="mail_logo"><i class="fas fa-envelope-square"></i></div>
-                    <div class="mail_info">
-                        <h5 class="subtitle6">selmanpatak@gmail.com</h5>
-                    </div>
-                </div>
-
-                <div class="copyright_text">
-                    <h5 class="subtitle7"> Copyright &copy; Selman Patković 2020</h5>
-                </div>
-
             </div>
         </div>
     </div>
 
-    <script type="text/javascript">
+    <!--Contact info part-->
+    <div id="contact">
+        <div class="map"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5720.448579308476!2d17.92056797717595!3d44.2024467664251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ee23ae979250f%3A0x6fbcab0f8f80f2f2!2sBabina%20rijeka%2C%20Zenica%2072000!5e0!3m2!1sen!2sba!4v1582035933430!5m2!1sen!2sba"
+                width="1920" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+        <div class="info">
+            <h3 class="subtitle5">Find me on</h3>
+            <div class="social_media">
+                <a href="https://www.facebook.com/selman.patkovic.9">
+                    <div class="facebook" data-aos="fade-up" data-aos-duration="700"><i class="fab fa-facebook"></i>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/karabaja2234/">
+                    <div class="instagram" data-aos="fade-up" data-aos-duration="700"><i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/selman-patkovic-8322b3197/">
+                    <div class="linkedin" data-aos="fade-up" data-aos-duration="700"><i class="fab fa-linkedin"></i>
+                    </div>
+                </a>
+                <a href="https://github.com/karabaja2234">
+                    <div class="github" data-aos="fade-up" data-aos-duration="700"><i class="fab fa-github-square"></i>
+                    </div>
+                </a>
+            </div>
+            <h3 class="subtitle5">Contact info</h3>
+            <div class="mail">
+                <div class="mail_logo"><i class="fas fa-envelope-square"></i></div>
+                <div class="mail_info">
+                    <h5 class="subtitle6">selmanpatak@gmail.com</h5>
+                </div>
+            </div>
 
-        // Menu-toggle button
+            <div class="copyright_text">
+                <h5 class="subtitle7"> Copyright &copy; Selman Patković 2020</h5>
+            </div>
 
-        $(document).ready(function () {
-            $(".menu-icon").on("click", function () {
-                $("nav ul").toggleClass("showing");
+        </div>
+    </div>
+    </div>
 
-            });
-        });
 
-        //Carousel
-
-        $(document).ready(function () {
-            $('.carousel').carousel();
-        });
-
-    </script>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="aos.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
