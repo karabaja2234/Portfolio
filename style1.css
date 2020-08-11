@@ -59,7 +59,7 @@ body {
     }
     
     .heading1 {
-        font-size: 56px;
+        font-size: 36px;
         text-align: center;
         color: white;
         padding-top: 20px;
@@ -68,7 +68,7 @@ body {
     }
 
     .subtitle1 {
-        font-size: 22px;
+        font-size: 18px;
         text-align: center;
         color: white;
         opacity: 0.5;
@@ -329,7 +329,7 @@ body {
     }
 
     .carousel-height {
-        height: 280px;
+        height: 340px;
     }
 
     /*Contact part*/ 
@@ -508,7 +508,7 @@ body {
     }
 
     .heading1 {
-        font-size: 66px;
+        font-size: 56px;
         text-align: center;
         color: white;
         font-weight: 700;
@@ -567,7 +567,7 @@ body {
 @media screen and (min-width: 961px) {
 
     .front_heading {
-        margin-right: 5%;
+        margin-right: 10%;
         margin-top: 7%;
         display: flex;
         flex-direction: column;
@@ -582,7 +582,7 @@ body {
     }
 
     .heading1 {
-        font-size: 96px;
+        font-size: 76px;
         text-align: center;
         color: white;
         font-weight: 700;
@@ -662,7 +662,7 @@ body {
     }
 
     .carousel-height {
-        height: 450px;
+        height: 480px;
     }
 }
 
