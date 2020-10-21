@@ -96,10 +96,18 @@ body {
   justify-content: center;
   width: 100%;
 }
+.profile_picture:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
 .profile_picture {
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  -webkit-transition: 200ms ease;
+	-o-transition: 200ms ease;
+	transition: 200ms ease;
 }
 .biography_box {
   display: flex;
@@ -178,6 +186,9 @@ body {
   width: 120px;
   background-color: white;
   color: #1c77ac;
+  -webkit-transition: 200ms ease;
+	-o-transition: 200ms ease;
+	transition: 200ms ease;
 }
 .icon1:hover,
 .icon2:hover,
@@ -260,6 +271,9 @@ body {
   width: 120px;
   background-color: #1c77ac;
   color: white;
+  -webkit-transition: 200ms ease;
+	-o-transition: 200ms ease;
+	transition: 200ms ease;
 }
 .technologies_icon1:hover,
 .technologies_icon2:hover,
@@ -384,13 +398,20 @@ body {
   height: 70px;
   width: 70px;
   color: #dcdcdc;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .facebook:hover,
 .instagram:hover,
 .linkedin:hover,
 .github:hover {
   font-size: 40px;
-  transition-delay: 1s;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2)
 }
 .mail {
   display: flex;
